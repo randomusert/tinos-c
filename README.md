@@ -1,15 +1,24 @@
-# os-template
-Template for x86 GRUB-based kernels
+# tin-c
+## building
+to build:
 
-## Setup
-- Clone this repo.
-```
-git clone https://github.com/9xbt/os-template.git
-cd os-template
-```
-- Change the GRUB config in `boot/grub.cfg` to your liking.
+``` bash
+# requires clang, nasm and ld
+make
 
-- Run the kernel.
 ```
-make run
-```
+## running
+to run, you have 2 options:
+
+1. ``` bash
+   make run
+   ```
+2. ``` bash
+   qemu-system-i386 -cdrom tinos-c.iso # or qemu-system-x86_64 -cdrom tinos-c.iso
+   ```
+
+# contributing
+if you want, you can contribute by adding feature
+
+# found issues?
+if you found issues you can report them.
