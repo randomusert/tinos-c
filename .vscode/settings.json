@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.hpp": "cpp",
+        "*.tpp": "cpp",
+        "*.cpp": "cpp",
+        "*.c": "c"
+    }
+}
