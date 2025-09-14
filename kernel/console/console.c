@@ -1,6 +1,9 @@
 #include "console.h"
 #include "../lib/stdio.h"
 #include "../drivers/keyboard/handler.h"
+#include "commands/help.h"
+#include "commands/halt.h"
+#include "commands/clear.h"
 
 void console() {
     //console. finally!
@@ -26,6 +29,12 @@ void console() {
 
             if (strcmp(buffer, "ver") == 0) {
                 print("TINOS v0.0.2 alpha\n");
+            } else if (strcmp(buffer, "help") == 0) {
+                help();
+            } else if (strcmp(buffer, "halt") == 0) {
+                halt();
+            } else if (strcmp(buffer, "clear") == 0) {
+                clear();
             } else {
                 print("Unknown command: ");
                 print(buffer);

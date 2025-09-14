@@ -1,6 +1,11 @@
 #include "../../lib/types.h"
 #include "../../lib/stdio.h"
+#include "../../interfaces/idriver.h"
 
+idriver keyboard = {
+    .name = "keyboard",
+    .version = 1,
+};
 
 char read_char() {
     static const char scancode_table[128] = {
